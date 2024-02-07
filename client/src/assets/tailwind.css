@@ -1,3 +1,224 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Header Font Size & Weight */
+.h-bold-110 {
+  font-size: 110;
+  font-weight: bolder;
+}
+.h-semiBold-110 {
+  font-size: 110;
+  font-weight: bold;
+}
+.h-medium-110 {
+  font-size: 110;
+  font-weight: normal;
+}
+.h-regular-110 {
+  font-size: 110;
+  font-weight: lighter;
+}
+
+.h-bold-90 {
+  font-size: 90;
+  font-weight: bolder;
+}
+.h-semiBold-90 {
+  font-size: 90;
+  font-weight: bold;
+}
+.h-medium-90 {
+  font-size: 90;
+  font-weight: normal;
+}
+.h-regular-90 {
+  font-size: 90;
+  font-weight: lighter;
+}
+
+.h-bold-64 {
+  font-size: 64;
+  font-weight: bolder;
+}
+.h-semiBold-64 {
+  font-size: 64;
+  font-weight: bold;
+}
+.h-medium-64 {
+  font-size: 64;
+  font-weight: normal;
+}
+.h-regular-64 {
+  font-size: 64;
+  font-weight: lighter;
+}
+
+.h-bold-54 {
+  font-size: 54;
+  font-weight: bolder;
+}
+.h-semiBold-54 {
+  font-size: 54;
+  font-weight: bold;
+}
+.h-medium-54 {
+  font-size: 54;
+  font-weight: normal;
+}
+.h-regular-54 {
+  font-size: 54;
+  font-weight: lighter;
+}
+
+.h-bold-48 {
+  font-size: 48;
+  font-weight: bolder;
+}
+.h-semiBold-48 {
+  font-size: 48;
+  font-weight: bold;
+}
+.h-medium-48 {
+  font-size: 48;
+  font-weight: normal;
+}
+.h-regular-48 {
+  font-size: 48;
+  font-weight: lighter;
+}
+
+.h-bold-36 {
+  font-size: 36;
+  font-weight: bolder;
+}
+.h-semiBold-36 {
+  font-size: 36;
+  font-weight: bold;
+}
+.h-medium-36 {
+  font-size: 36;
+  font-weight: normal;
+}
+.h-regular-36 {
+  font-size: 36;
+  font-weight: lighter;
+}
+
+.h-bold-32 {
+  font-size: 32;
+  font-weight: bolder;
+}
+.h-semiBold-32 {
+  font-size: 32;
+  font-weight: bold;
+}
+.h-medium-32 {
+  font-size: 32;
+  font-weight: normal;
+}
+.h-regular-32 {
+  font-size: 32;
+  font-weight: lighter;
+}
+
+.h-bold-24 {
+  font-size: 24;
+  font-weight: bolder;
+}
+.h-semiBold-24 {
+  font-size: 24;
+  font-weight: bold;
+}
+.h-medium-24 {
+  font-size: 24;
+  font-weight: normal;
+}
+.h-regular-24 {
+  font-size: 24;
+  font-weight: lighter;
+}
+
+.h-bold-20 {
+  font-size: 20;
+  font-weight: bolder;
+}
+.h-semiBold-20 {
+  font-size: 20;
+  font-weight: bold;
+}
+.h-medium-20 {
+  font-size: 20;
+  font-weight: normal;
+}
+.h-regular-20 {
+  font-size: 20;
+  font-weight: lighter;
+}
+
+/* Title Font Size & Weight */
+
+.t-semiBold-24 {
+  font-size: 24;
+  font-weight: bold;
+}
+.t-medium-24 {
+  font-size: 24;
+  font-weight: normal;
+}
+.t-regular-24 {
+  font-size: 24;
+  font-weight: lighter;
+}
+
+.t-semiBold-20 {
+  font-size: 20;
+  font-weight: bold;
+}
+.t-medium-20 {
+  font-size: 20;
+  font-weight: normal;
+}
+.t-regular-20 {
+  font-size: 20;
+  font-weight: lighter;
+}
+
+.t-semiBold-16 {
+  font-size: 16;
+  font-weight: bold;
+}
+.t-medium-16 {
+  font-size: 16;
+  font-weight: normal;
+}
+.t-regular-16 {
+  font-size: 16;
+  font-weight: lighter;
+}
+
+.t-semiBold-14 {
+  font-size: 14;
+  font-weight: bold;
+}
+.t-medium-14 {
+  font-size: 14;
+  font-weight: normal;
+}
+.t-regular-14 {
+  font-size: 14;
+  font-weight: lighter;
+}
+
+.t-semiBold-12 {
+  font-size: 12;
+  font-weight: bold;
+}
+.t-medium-12 {
+  font-size: 12;
+  font-weight: normal;
+}
+.t-regular-12 {
+  font-size: 12;
+  font-weight: lighter;
+}
