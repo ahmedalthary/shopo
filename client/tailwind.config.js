@@ -22,6 +22,13 @@ export default {
         "b-20": "20px",
         "b-5": "5px",
       },
+      gap: {
+        "primary-gap": "30px",
+      },
+    },
+    container: {
+      padding: "1rem",
+      center: true,
     },
   },
   plugins: [],
