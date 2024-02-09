@@ -14,16 +14,16 @@
                         <ul class="navBar-navLink flex flex-col w-full gap-primary-gap md:flex-row md:justify-center">
 
                             <li
-                                class="active t-regular-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2 md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
+                                class="active t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2 md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
                                 Home</li>
                             <li
-                                class=" t-regular-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
+                                class=" t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
                                 Contact</li>
                             <li
-                                class=" t-regular-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
+                                class=" t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
                                 About</li>
                             <li
-                                class=" t-regular-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
+                                class=" t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
 
                                 <RouterLink :to="{ name: 'Signup' }">
                                     Sign Up
@@ -39,7 +39,7 @@
                     <div class="flex gap-primary-gap flex-row md:flex-grow-[2] ">
                         <div class="relative flex-grow-[1]">
                             <input type="text"
-                                class=" w-full h-full py-[7px] ps-5 pe-3 bg-secondary placeholder:text-[12px] placeholder:font-semibold text-[12px] text-text-color1 font-medium focus:outline-0 rounded-b-5 border border-transparent focus:border-secondary2 "
+                                class=" w-full h-full py-[7px] ps-5 pe-[2.3rem] bg-secondary placeholder:text-[12px] placeholder:font-semibold text-[12px] text-text-color1 font-medium focus:outline-0 rounded-b-[3px] border border-transparent focus:border-secondary2 "
                                 placeholder="What are you looking for?">
                             <i class="uil uil-search text-[18px] absolute right-[18px] top-2/4 translate-y-[-50%]"></i>
                         </div>
