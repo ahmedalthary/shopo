@@ -9,7 +9,7 @@
                         <p class="t-regular-16">Get 10% off your first order</p>
                         <div class="relative h-10">
                             <input type="text"
-                                class=" w-full h-full py-[7px] ps-5 pe-[2.3rem] bg-transparent placeholder:text-[12px] placeholder:font-semibold text-[12px] text-text-color font-medium focus:outline-0 rounded-b-[3px] border border-text-color "
+                                class=" w-full h-full py-[7px] ps-5 pe-[2.3rem] bg-transparent placeholder:text-[12px] placeholder:font-semibold text-[12px] text-text-color font-medium focus:outline-0 rounded-b-3 border border-text-color "
                                 placeholder="Enter your email">
                             <i class="uil uil-message text-[18px] absolute right-[18px] top-2/4 translate-y-[-50%]"></i>
                         </div>

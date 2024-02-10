@@ -21,6 +21,7 @@ export default {
       borderRadius: {
         "b-20": "20px",
         "b-5": "5px",
+        "b-3": "3px",
       },
       gap: {
         "primary-gap": "30px",

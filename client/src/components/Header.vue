@@ -1,8 +1,8 @@
 <template>
     <header>
-        <div :class="{ 'sticky': headerSticky }" class="scrolling-header w-full z-[999] p-5 left-0 bg-primary md:fixed ">
+        <div :class="{ 'sticky': headerSticky }" class="scrolling-header w-full z-[999]  left-0 bg-primary">
             <div class="container">
-                <div class="navBar flex items-center flex-wrap">
+                <div class="navBar p-5 flex items-center flex-wrap">
                     <div class="navBar-logo md:flex-grow-[2] flex-shrink-0">
                         <RouterLink class="text-text-color2 h-bold-24 " :to="{ name: 'Home' }">
                             <i class="uil uil-restaurant"></i>
@@ -39,7 +39,7 @@
                     <div class="flex gap-primary-gap flex-row md:flex-grow-[2] ">
                         <div class="relative flex-grow-[1]">
                             <input type="text"
-                                class=" w-full h-full py-[7px] ps-5 pe-[2.3rem] bg-secondary placeholder:text-[12px] placeholder:font-semibold text-[12px] text-text-color1 font-medium focus:outline-0 rounded-b-[3px] border border-transparent focus:border-secondary2 "
+                                class=" w-full h-full py-[7px] ps-5 pe-[2.3rem] bg-secondary placeholder:text-[12px] placeholder:font-semibold text-[12px] text-text-color1 font-medium focus:outline-0 rounded-b-3 border border-transparent focus:border-secondary2 "
                                 placeholder="What are you looking for?">
                             <i class="uil uil-search text-[18px] absolute right-[18px] top-2/4 translate-y-[-50%]"></i>
                         </div>
@@ -115,7 +115,7 @@ const toggleNavBar = () => {
     background-color: #fff;
     position: fixed;
     top: -92px !important;
-    box-shadow: 2px 2px 5px #303030;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
     transform: translateY(92px);
     transition: 0.3s;
 
