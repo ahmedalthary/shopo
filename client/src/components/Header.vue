@@ -11,21 +11,41 @@
                     </div>
                     <div :class="{ 'collapsed': collapsed }"
                         class="navBar-collapsing mt-6 md:mt-0 order-4 w-full h-[300px] opacity-100 transition-all duration-300 md:flex-grow-[3]  md:order-[initial] md:w-[initial] md:h-[initial] ">
-                        <ul class="navBar-navLink flex flex-col w-full gap-primary-gap md:flex-row md:justify-center">
+                        <ul
+                            class="navBar-navLink navBar-navItem flex flex-col w-full gap-primary-gap md:flex-row md:justify-center">
 
-                            <li
-                                class="active t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2 md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
-                                Home</li>
-                            <li
-                                class=" t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
-                                Contact</li>
-                            <li
-                                class=" t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
-                                About</li>
-                            <li
-                                class=" t-medium-16 cursor-pointer transition-colors duration-300 p-[5px] relative text-text-color2 hover:text-secondary2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:z-[-1] md:before:bg-text-color2 md:before:transition md:before:rounded-[3px]">
+                            <li :class="{ active: activeNavItemIndex === 0 }"
+                                class="t-medium-16 p-[5px] relative text-text-color2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:bg-text-color2 md:before:transition md:before:rounded-[3px] md:before:z-[1]">
 
-                                <RouterLink :to="{ name: 'Signup' }">
+                                <RouterLink :to="{ name: 'Home' }"
+                                    class="cursor-pointer transition-colors duration-300 hover:text-secondary2"
+                                    @click="activeNavItem(0)">
+                                    Home
+                                </RouterLink>
+                            </li>
+                            <li :class="{ active: activeNavItemIndex === 1 }"
+                                class="t-medium-16 p-[5px] relative text-text-color2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:bg-text-color2 md:before:transition md:before:rounded-[3px] md:before:z-[1]">
+
+                                <RouterLink :to="{ name: 'Signup' }"
+                                    class="cursor-pointer transition-colors duration-300 hover:text-secondary2"
+                                    @click="activeNavItem(1)">
+                                    Contact
+                                </RouterLink>
+                            </li>
+                            <li :class="{ active: activeNavItemIndex === 2 }"
+                                class="t-medium-16 p-[5px] relative text-text-color2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:bg-text-color2 md:before:transition md:before:rounded-[3px] md:before:z-[1]">
+
+                                <RouterLink :to="{ name: 'Signup' }"
+                                    class="cursor-pointer transition-colors duration-300 hover:text-secondary2"
+                                    @click="activeNavItem(2)">
+                                    About
+                                </RouterLink>
+                            </li>
+                            <li :class="{ active: activeNavItemIndex === 3 }"
+                                class="t-medium-16 p-[5px] relative text-text-color2  md:p-[10px] md:before:content-[''] md:before:absolute md:before:left-[10px] md:before:bottom-0 md:before:h-[2px] md:before:w-0 md:before:bg-text-color2 md:before:transition md:before:rounded-[3px] md:before:z-[1]">
+                                <RouterLink :to="{ name: 'Signup' }"
+                                    class="cursor-pointer transition-colors duration-300 hover:text-secondary2"
+                                    @click="activeNavItem(3)">
                                     Sign Up
                                 </RouterLink>
                             </li>
@@ -36,17 +56,31 @@
                         class=" toggle-button t-medium-20 text-text-color2 cursor-pointer md:hidden ">
                         <i class="uil uil-bars"></i>
                     </div>
-                    <div class="flex gap-primary-gap flex-row md:flex-grow-[2] ">
+                    <div class=" flex gap-primary-gap flex-row md:flex-grow-[2] ">
                         <div class="relative flex-grow-[1]">
                             <input type="text"
                                 class=" w-full h-full py-[7px] ps-5 pe-[2.3rem] bg-secondary placeholder:text-[12px] placeholder:font-semibold text-[12px] text-text-color1 font-medium focus:outline-0 rounded-b-3 border border-transparent focus:border-secondary2 "
                                 placeholder="What are you looking for?">
                             <i class="uil uil-search text-[18px] absolute right-[18px] top-2/4 translate-y-[-50%]"></i>
                         </div>
-                        <i
-                            class="uil uil-heart text-[27px] cursor-pointer transition-colors duration-300 hover:text-secondary2"></i>
-                        <i
-                            class="uil uil-shopping-cart text-[27px] cursor-pointer transition-colors duration-300 hover:text-secondary2"></i>
+                        <ul class=" navBar-navIcon navBar-navItem  flex gap-primary-gap flex-row">
+                            <li :class="{ active: activeNavItemIndex === 4 }"
+                                class="text-[27px] text-text-color2 relative z-[1] before:content-[''] before:absolute before:left-2/4 before:translate-x-[-48%] top-0 before:h-[40px] before:w-[40px] before:bg-secondary2 before:rounded-[50%] before:z-[-1] before:hidden">
+                                <RouterLink :to="{ name: 'Signup' }"
+                                    class="cursor-pointer transition-colors duration-300 hover:text-secondary2"
+                                    @click="activeNavItem(4)">
+                                    <i class="uil uil-heart "></i>
+                                </RouterLink>
+                            </li>
+                            <li :class="{ active: activeNavItemIndex === 5 }"
+                                class="text-[27px] text-text-color2 relative z-[1] before:content-[''] before:absolute before:left-2/4 before:translate-x-[-48%] top-0 before:h-[40px] before:w-[40px] before:bg-secondary2 before:rounded-[50%] before:z-[-1] before:hidden">
+                                <RouterLink :to="{ name: 'Signup' }"
+                                    class="cursor-pointer transition-colors duration-300 hover:text-secondary2"
+                                    @click="activeNavItem(5)">
+                                    <i class="uil uil-shopping-cart"></i>
+                                </RouterLink>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -54,9 +88,10 @@
     </header>
 </template>
 <script setup>
-import { onBeforeUpdate, onMounted, ref } from 'vue';
+import { onBeforeMount, onMounted, ref } from 'vue';
 const headerSticky = ref(false);
 const collapsed = ref(true);
+const activeNavItemIndex = ref(0);
 onMounted(() => {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 100) {
@@ -66,9 +101,22 @@ onMounted(() => {
         }
     })
 
-
-
 })
+
+const activeNavItem = (index) => {
+    activeNavItemIndex.value = index;
+    localStorage.setItem('activeNavItemIndex', index);
+}
+
+
+
+onBeforeMount(() => {
+    const storedIndex = localStorage.getItem('activeNavItemIndex');
+    if (storedIndex !== null) {
+        activeNavItemIndex.value = parseInt(storedIndex);
+    }
+});
+
 // onBeforeUpdate(() => {
 //     //  ================ Navbar Item Active ================
 
@@ -110,7 +158,7 @@ const toggleNavBar = () => {
 </script>
 
 
-<style scoped>
+<style >
 .scrolling-header.sticky {
     background-color: #fff;
     position: fixed;
@@ -119,6 +167,16 @@ const toggleNavBar = () => {
     transform: translateY(92px);
     transition: 0.3s;
 
+}
+
+.navBar-navIcon li.active,
+.navBar-navIcon li.active a:hover {
+    color: #fff;
+}
+
+
+.navBar-navIcon li.active::before {
+    display: block;
 }
 
 @media(max-width: 768.98px) {
