@@ -39,8 +39,10 @@
                         class="pb-[2px] t-medium-16 text-text-color2 border-b-2 border-text-color1 cursor-pointer  transition-colors duration-300 hover:text-secondary2 hover:border-secondary2">
                         Log in
                     </RouterLink>
+                    <div class=""> </div>
                 </div>
             </div>
+
         </div>
 
     </section>

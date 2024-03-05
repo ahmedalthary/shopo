@@ -80,17 +80,72 @@
                                     <i class="uil uil-shopping-cart"></i>
                                 </RouterLink>
                             </li>
+                            <li @click="toggleAccount" :class="{ active: activeNavItemIndex === 6 }"
+                                class="text-[27px] text-text-color2 relative z-[1] before:content-[''] before:absolute before:left-2/4 before:translate-x-[-48%] top-0 before:h-[40px] before:w-[40px] before:bg-secondary2 before:rounded-[50%] before:z-[-1] before:hidden">
+                                <div class="inline cursor-pointer transition-colors duration-300 hover:text-secondary2">
+                                    <i class="uil uil-user"></i>
+                                </div>
+
+                                <div :class="{ 'collapsed': collapsedAccount }"
+                                    class="absolute right-0 mt-1 rounded-b-3 py-4 ps-5 pe-3 w-56 transition-all duration-500 opacity-100 h-[280px] bg-black bg-opacity-40 backdrop-blur-[6px]">
+                                    <ul class="flex flex-col gap-4">
+                                        <li class="text-text-color">
+                                            <RouterLink :to="{ name: 'Signup' }"
+                                                class="cursor-pointer transition-colors duration-300 hover:text-gray-300 flex flex-row items-center gap-1"
+                                                @click="activeNavItem(6)">
+                                                <i class="uil uil-user text-[24px]"></i>
+                                                <span class="t-medium-16">Manage My Account</span>
+                                            </RouterLink>
+                                        </li>
+                                        <li class="text-text-color">
+                                            <RouterLink :to="{ name: 'Signup' }"
+                                                class="cursor-pointer transition-colors duration-300 hover:text-gray-300 flex flex-row items-center gap-1"
+                                                @click="activeNavItem(6)">
+                                                <i class="uil uil-shopping-bag text-[24px]"></i>
+                                                <span class="t-medium-16">My Order </span>
+                                            </RouterLink>
+                                        </li>
+                                        <li class="text-text-color">
+                                            <RouterLink :to="{ name: 'Signup' }"
+                                                class="cursor-pointer transition-colors duration-300 hover:text-gray-300 flex flex-row items-center gap-1"
+                                                @click="activeNavItem(6)">
+                                                <i class="uil uil-times-circle text-[24px]"></i>
+                                                <span class="t-medium-16">My Cancellations</span>
+                                            </RouterLink>
+                                        </li>
+                                        <li class="text-text-color">
+                                            <RouterLink :to="{ name: 'Signup' }"
+                                                class="cursor-pointer transition-colors duration-300 hover:text-gray-300 flex flex-row items-center gap-1"
+                                                @click="activeNavItem(6)">
+                                                <i class="uil uil-favorite text-[24px]"></i>
+                                                <span class="t-medium-16">My Reviews</span>
+                                            </RouterLink>
+                                        </li>
+                                        <li class="text-text-color">
+                                            <RouterLink :to="{ name: 'Signup' }"
+                                                class="cursor-pointer transition-colors duration-300 hover:text-gray-300 flex flex-row items-center gap-1"
+                                                @click="activeNavItem(6)">
+                                                <i class="uil uil-signout text-[24px]"></i>
+                                                <span class="t-medium-16">Logout</span>
+                                            </RouterLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </header>
 </template>
+
 <script setup>
 import { onBeforeMount, onMounted, ref } from 'vue';
 const headerSticky = ref(false);
 const collapsed = ref(true);
+const collapsedAccount = ref(true);
 const activeNavItemIndex = ref(0);
 onMounted(() => {
     window.addEventListener("scroll", () => {
@@ -152,13 +207,16 @@ const toggleNavBar = () => {
     collapsed.value = !collapsed.value
 
 }
+const toggleAccount = () => {
+    collapsedAccount.value = !collapsedAccount.value
 
+}
 
 
 </script>
 
 
-<style >
+<style>
 .scrolling-header.sticky {
     background-color: #fff;
     position: fixed;
@@ -170,13 +228,25 @@ const toggleNavBar = () => {
 }
 
 .navBar-navIcon li.active,
-.navBar-navIcon li.active a:hover {
+.navBar-navIcon li.active a:hover,
+.navBar-navIcon li.active div:hover {
     color: #fff;
 }
 
 
 .navBar-navIcon li.active::before {
     display: block;
+}
+
+.navBar-navIcon li:last-child div {
+    height: 280px;
+    opacity: 1;
+}
+
+.navBar-navIcon li:last-child div.collapsed {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
 }
 
 @media(max-width: 768.98px) {
